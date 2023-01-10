@@ -28,7 +28,7 @@ The Twitter dataset [1] contains 68.841 manually labeled tweets related to 503 e
 'sampled_words': a list, sampled words of the tweet (only words that are not in the dictionary are kept to reduce the total number of unique words and maintain a sparse message graph)
 ```
 ## Twitter dataset Usage
-```
+```Python
 import pandas as pd
 import numpy as np
 
