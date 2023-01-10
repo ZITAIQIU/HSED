@@ -11,7 +11,7 @@ This repository contains the source code and dataset for the paper "Heterogeneou
 # Datasets and Usage
 ## Twitter dataset
 The Twitter dataset [1] contains 68.841 manually labeled tweets related to 503 event classes. To reduce data processing time, already processed data can be found on [Google Drive](https://drive.google.com/drive/folders/1mb8IT7uTW-gCnK5EFE67iFk7RtZTz3rB?usp=sharing)
-## Twitter data format
+## Twitter dataset format
 ```
 'event_id': manually labeled event class
 'tweet_id': tweet id
@@ -26,6 +26,21 @@ The Twitter dataset [1] contains 68.841 manually labeled tweets related to 503 e
 'words': a list, tokens of the tweet (hashtags and user mentions are filtered out)
 'filtered_words': a list, lower-cased words of the tweet (punctuations, stop words, hashtags, and user mentions are filtered out)
 'sampled_words': a list, sampled words of the tweet (only words that are not in the dictionary are kept to reduce the total number of unique words and maintain a sparse message graph)
+```
+## Twitter dataset Usage
+```
+import pandas as pd
+import numpy as np
+
+p_part1 = './datasets/Twitter/68841_tweets_multiclasses_filtered_0722_part1.npy'
+p_part2 = './datasets/Twitter/68841_tweets_multiclasses_filtered_0722_part2.npy'
+df_np_part1 = np.load(p_part1, allow_pickle=True)
+df_np_part2 = np.load(p_part2, allow_pickle=True)
+df_np = np.concatenate((df_np_part1, df_np_part2), axis = 0)
+print("Loaded data.")
+df = pd.DataFrame(data=df_np, columns=["event_id", "tweet_id", "text", "user_id", "created_at", "user_loc",\
+    "place_type", "place_full_name", "place_country_code", "hashtags", "user_mentions", "image_urls", "entities", 
+    "words", "filtered_words", "sampled_words"])
 ```
 
 
