@@ -32,8 +32,8 @@ The Twitter dataset [1] contains 68.841 manually labeled tweets related to 503 e
 import pandas as pd
 import numpy as np
 
-p_part1 = './datasets/Twitter/68841_tweets_multiclasses_filtered_0722_part1.npy'
-p_part2 = './datasets/Twitter/68841_tweets_multiclasses_filtered_0722_part2.npy'
+p_part1 = './data/Twitter_initial/68841_tweets_multiclasses_filtered_0722_part1.npy'
+p_part2 = './data/Twitter_initial/68841_tweets_multiclasses_filtered_0722_part2.npy'
 df_np_part1 = np.load(p_part1, allow_pickle=True)
 df_np_part2 = np.load(p_part2, allow_pickle=True)
 df_np = np.concatenate((df_np_part1, df_np_part2), axis = 0)
