@@ -42,7 +42,10 @@ df = pd.DataFrame(data=df_np, columns=["event_id", "tweet_id", "text", "user_id"
     "place_type", "place_full_name", "place_country_code", "hashtags", "user_mentions", "image_urls", "entities", 
     "words", "filtered_words", "sampled_words"])
 ```
-
+# To run HSED
+* Step 1) run _feature_process.py_ to generate the initial features from the Twitter dataset.
+* Step 2) run _generate_homogeneous_graph.py_ to cover social message to homogeneous information network.
+* Step 3) run _HSED.py_
 
 
 # Reference
