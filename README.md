@@ -8,6 +8,13 @@ This repository contains the source code and dataset for the paper "Heterogeneou
 * dgl==0.4.3
 * scikit-learn==0.20.3
 * torchvision=0.2.2
+
+# To run HSED
+* Step 1) run _feature_process.py_ to generate the initial features from the Twitter dataset.
+* Step 2) run _generate_homo_graph.py_ to cover social message to homogeneous information network as input.
+* Step 3) run _HSED.py_
+
+
 # Datasets and Usage
 ## Twitter dataset
 The Twitter dataset [1] contains 68.841 manually labeled tweets related to 503 event classes. To reduce data processing time, already processed data can be found on [Google Drive](https://drive.google.com/drive/folders/1mb8IT7uTW-gCnK5EFE67iFk7RtZTz3rB?usp=sharing)
@@ -42,10 +49,7 @@ df = pd.DataFrame(data=df_np, columns=["event_id", "tweet_id", "text", "user_id"
     "place_type", "place_full_name", "place_country_code", "hashtags", "user_mentions", "image_urls", "entities", 
     "words", "filtered_words", "sampled_words"])
 ```
-# To run HSED
-* Step 1) run _feature_process.py_ to generate the initial features from the Twitter dataset.
-* Step 2) run _generate_homo_graph.py_ to cover social message to homogeneous information network as input.
-* Step 3) run _HSED.py_
+
 
 
 # Reference
