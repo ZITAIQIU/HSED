@@ -48,7 +48,7 @@ config_args = {
     },
     'data_config': {
         'datapath': ('./data/', 'the path of dataset'),
-        'dataset': ('mini-twitter', 'which dataset to use: twitter, mini-twitter cora, citeseer'),
+        'dataset': ('mini-twitter', 'which dataset to use: [twitter, mini-twitter cora, citeseer]'),
         'dataset-model': ('/offline/', 'which dataset model to use (incremental/offline)'),
         'message-block': ('0/', 'which message block to use(0~21). offline only have 0'),
         'val-prop': (0.05, 'proportion of validation edges for link prediction'),
