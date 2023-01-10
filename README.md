@@ -12,7 +12,7 @@ This repository contains the source code and dataset for the paper "Heterogeneou
 ## Twitter dataset
 The Twitter dataset [1] contains 68.841 manually labeled tweets related to 503 event classes. To reduce data processing time, already processed data can be found on [Google Drive](https://drive.google.com/drive/folders/1mb8IT7uTW-gCnK5EFE67iFk7RtZTz3rB?usp=sharing)
 ## Twitter data format
-'''
+"""
 'event_id': manually labeled event class
 'tweet_id': tweet id
 'text': content of the tweet
@@ -26,7 +26,7 @@ The Twitter dataset [1] contains 68.841 manually labeled tweets related to 503 e
 'words': a list, tokens of the tweet (hashtags and user mentions are filtered out)
 'filtered_words': a list, lower-cased words of the tweet (punctuations, stop words, hashtags, and user mentions are filtered out)
 'sampled_words': a list, sampled words of the tweet (only words that are not in the dictionary are kept to reduce the total number of unique words and maintain a sparse message graph)
-'''
+"""
 
 
 # Reference
