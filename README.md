@@ -63,14 +63,14 @@ df = pd.DataFrame(data=df_np, columns=["event_id", "tweet_id", "text", "user_id"
 ```
 # Baselines
 In our paper the baselines we used including:
-* Word2vec [3]: Implement with https://spacy.io/models/en#en_core_web_lg.
-* LDA [4]: Implement with https://radimrehurek.com/gensim/models/ldamodel.html.
-* WMD [5]: Implement with (https://tedboy.github.io/nlps/generated/generated/gensim.similarities.WmdSimilarity.html#gensim.similarities.WmdSimilarity) .
-* BERT [6]: Implement with (https://github.com/huggingface/transformers).
-* KPGNN [7]: Implement with (https://github.com/RingBDStack/KPGNN).
-* FinEvent [8]: Implement with (https://github.com/RingBDStack/FinEvent).
-* DGI [9]: Implement with (https://github.com/PetarV-/DGI).
-* GraphCL [10]: Implement with (https://github.com/Shen-Lab/GraphCL).
+* Word2vec [3]. Source: https://spacy.io/models/en#en_core_web_lg.
+* LDA [4]. Source: https://radimrehurek.com/gensim/models/ldamodel.html.
+* WMD [5]. Source: https://tedboy.github.io/nlps/generated/generated/gensim.similarities.WmdSimilarity.html#gensim.similarities.WmdSimilarity.
+* BERT [6]. Source: https://github.com/huggingface/transformers.
+* KPGNN [7]. Source: https://github.com/RingBDStack/KPGNN.
+* FinEvent [8]. Source: https://github.com/RingBDStack/FinEvent.
+* DGI [9]. Source: https://github.com/PetarV-/DGI.
+* GraphCL [10]. Source: https://github.com/Shen-Lab/GraphCL.
 
 # Reference
 [1] A. J. McMinn, Y. Moshfeghi, and J. M. Jose, “Building a large-scale corpus for evaluating event detection on twitter,” in Proceedings of the 22nd ACM international conference on Information & Knowledge Management, 2013, pp. 409–418.
