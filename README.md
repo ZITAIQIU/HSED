@@ -63,23 +63,32 @@ df = pd.DataFrame(data=df_np, columns=["event_id", "tweet_id", "text", "user_id"
 ```
 # Baselines
 In our paper the baselines we used including:
-* [Word2vec](https://spacy.io/models/en#en_core_web_lg) [3]
-* [LDA](https://radimrehurek.com/gensim/models/ldamodel.html) [4]
-* [WMD](https://tedboy.github.io/nlps/generated/generated/gensim.similarities.WmdSimilarity.html#gensim.similarities.WmdSimilarity) [5]
-* [BERT](https://github.com/huggingface/transformers) [6]
-* [KPGNN](https://github.com/RingBDStack/KPGNN) [7]
-* [FinEvent](https://github.com/RingBDStack/FinEvent) [8]
-* [DGI](https://github.com/PetarV-/DGI) [9]
-* [GraphCL](https://github.com/Shen-Lab/GraphCL) [10]
+* Word2vec [3]: Implement with https://spacy.io/models/en#en_core_web_lg.
+* LDA [4]: Implement with https://radimrehurek.com/gensim/models/ldamodel.html.
+* WMD [5]: Implement with (https://tedboy.github.io/nlps/generated/generated/gensim.similarities.WmdSimilarity.html#gensim.similarities.WmdSimilarity) .
+* BERT [6]: Implement with (https://github.com/huggingface/transformers).
+* KPGNN [7]: Implement with (https://github.com/RingBDStack/KPGNN).
+* FinEvent [8]: Implement with (https://github.com/RingBDStack/FinEvent).
+* DGI [9]: Implement with (https://github.com/PetarV-/DGI).
+* GraphCL [10]: Implement with (https://github.com/Shen-Lab/GraphCL).
 
 # Reference
 [1] A. J. McMinn, Y. Moshfeghi, and J. M. Jose, “Building a large-scale corpus for evaluating event detection on twitter,” in Proceedings of the 22nd ACM international conference on Information & Knowledge Management, 2013, pp. 409–418.
+
 [2] P. Sen, G. Namata, M. Bilgic, L. Getoor, B. Galligher, and T. Eliassi-Rad, “Collective classification in network data,” AI magazine, vol. 29, no. 3, pp. 93–93, 2008.
+
 [3] T. Mikolov, K. Chen, G. Corrado, and J. Dean, “Efficient estimation of word representations in vector space,” arXiv preprint arXiv:1301.3781, 2013.
+
 [4] D. M. Blei, A. Y. Ng, and M. I. Jordan, “Latent dirichlet allocation,” Journal of machine Learning research, vol. 3, no. Jan, pp. 993–1022, 2003.
+
 [5] M. Kusner, Y. Sun, N. Kolkin, and K. Weinberger, “From word embeddings to document distances,” in International conference on machine learning. PMLR, 2015, pp. 957–966.
+
 [6] J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, “Bert: Pre-training of deep bidirectional transformers for language understanding,” arXiv preprint arXiv:1810.04805, 2018.
+
 [7] Y. Cao, H. Peng, J. Wu, Y. Dou, J. Li, and P. S. Yu, “Knowledge-preserving incremental social event detection via heterogeneous gnns,” in Proceedings of the Web Conference 2021, 2021, pp. 3383–3395.
+
 [8] H. Peng, R. Zhang, S. Li, Y. Cao, S. Pan, and P. Yu, “Reinforced, incremental and cross-lingual event detection from social messages,” IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022.
+
 [9] P. Veliˇckovi ́c, G. Cucurull, A. Casanova, A. Romero, P. Lio, and Y. Bengio, “Graph attention networks,” arXiv preprint arXiv:1710.10903, 2017.
+
 [10] Y. You, T. Chen, Y. Sui, T. Chen, Z. Wang, and Y. Shen, “Graph contrastive learning with augmentations,” Advances in Neural Information Processing Systems, vol. 33, pp. 5812–5823, 2020.
