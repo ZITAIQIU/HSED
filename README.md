@@ -20,7 +20,9 @@ This repository contains the source code and dataset for the paper "Heterogeneou
 
 # Datasets and Usage
 HSED only use Twitter dataset and UHSED use mini-Twitter, Cora and Citeseer datasets.
-To run this code on different detaset please change the valus of 'dataset' in ```config.py```.
+
+To run this code on different detasets please change the valu of 'dataset' in ```config.py```.
+
 ## Twitter dataset
 The Twitter dataset [1] contains 68.841 manually labeled tweets related to 503 event classes. To reduce data processing time, already processed data can be found on [Google Drive](https://drive.google.com/drive/folders/1mb8IT7uTW-gCnK5EFE67iFk7RtZTz3rB?usp=sharing)
 ## Twitter dataset format
