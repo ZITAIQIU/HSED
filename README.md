@@ -17,7 +17,7 @@ This repository contains the source code and dataset for the paper "Heterogeneou
 * Step 3) run ```generate_homo_graph.py``` to cover social message to homogeneous information network as input.
 * Step 4) run ```HSED.py```
 ## To run UHSED
-* Step 1) set model as 'UHSED' and dataset select from ['mini-twitter', 'cora', 'citeseer'] in ```config.pu```.
+* Step 1) set model as 'UHSED' and dataset select from ['mini-twitter', 'cora'[2], 'citeseer'[2]] in ```config.pu```.
 * Step 2) run ```UHSED.py```
 
 
@@ -29,7 +29,7 @@ HSED only use _Twitter_ dataset and UHSED use _mini-Twitter, Cora and Citeseer d
 To run this code on different detasets please change the valu of 'dataset' in ```config.py```.
 
 ## Twitter dataset
-The Twitter dataset [1] contains 68.841 manually labeled tweets related to 503 event classes. To reduce data processing time, already processed data can be found on [Google Drive](https://drive.google.com/drive/folders/1mb8IT7uTW-gCnK5EFE67iFk7RtZTz3rB?usp=sharing)
+The Twitter dataset [1] contains 68.841 manually labeled tweets related to 503 event classes. To reduce data processing time, already processed data can be found on [Google Drive](https://drive.google.com/drive/folders/1mb8IT7uTW-gCnK5EFE67iFk7RtZTz3rB?usp=sharing).
 ### Twitter data Format
 ```
 'event_id': manually labeled event class
@@ -61,8 +61,25 @@ df = pd.DataFrame(data=df_np, columns=["event_id", "tweet_id", "text", "user_id"
     "place_type", "place_full_name", "place_country_code", "hashtags", "user_mentions", "image_urls", "entities", 
     "words", "filtered_words", "sampled_words"])
 ```
-
-
+# Baselines
+In our paper the baselines we used including:
+* [Word2vec](https://spacy.io/models/en#en_core_web_lg) [3]
+* [LDA](https://radimrehurek.com/gensim/models/ldamodel.html) [4]
+* [WMD](https://tedboy.github.io/nlps/generated/generated/gensim.similarities.WmdSimilarity.html#gensim.similarities.WmdSimilarity) [5]
+* [BERT](https://github.com/huggingface/transformers) [6]
+* [KPGNN](https://github.com/RingBDStack/KPGNN) [7]
+* [FinEvent](https://github.com/RingBDStack/FinEvent) [8]
+* [DGI](https://github.com/PetarV-/DGI) [9]
+* [GraphCL](https://github.com/Shen-Lab/GraphCL) [10]
 
 # Reference
-[1] [Andrew J McMinn, Yashar Moshfeghi, and Joemon M Jose. 2013. Building a large-scale corpus for evaluating event detection on twitter. In Proceedings of the CIKM.ACM, 409–418.](https://dl.acm.org/doi/abs/10.1145/2505515.2505695)
+[1] A. J. McMinn, Y. Moshfeghi, and J. M. Jose, “Building a large-scale corpus for evaluating event detection on twitter,” in Proceedings of the 22nd ACM international conference on Information & Knowledge Management, 2013, pp. 409–418.
+[2] P. Sen, G. Namata, M. Bilgic, L. Getoor, B. Galligher, and T. Eliassi-Rad, “Collective classification in network data,” AI magazine, vol. 29, no. 3, pp. 93–93, 2008.
+[3] T. Mikolov, K. Chen, G. Corrado, and J. Dean, “Efficient estimation of word representations in vector space,” arXiv preprint arXiv:1301.3781, 2013.
+[4] D. M. Blei, A. Y. Ng, and M. I. Jordan, “Latent dirichlet allocation,” Journal of machine Learning research, vol. 3, no. Jan, pp. 993–1022, 2003.
+[5] M. Kusner, Y. Sun, N. Kolkin, and K. Weinberger, “From word embeddings to document distances,” in International conference on machine learning. PMLR, 2015, pp. 957–966.
+[6] J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, “Bert: Pre-training of deep bidirectional transformers for language understanding,” arXiv preprint arXiv:1810.04805, 2018.
+[7] Y. Cao, H. Peng, J. Wu, Y. Dou, J. Li, and P. S. Yu, “Knowledge-preserving incremental social event detection via heterogeneous gnns,” in Proceedings of the Web Conference 2021, 2021, pp. 3383–3395.
+[8] H. Peng, R. Zhang, S. Li, Y. Cao, S. Pan, and P. Yu, “Reinforced, incremental and cross-lingual event detection from social messages,” IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022.
+[9] P. Veliˇckovi ́c, G. Cucurull, A. Casanova, A. Romero, P. Lio, and Y. Bengio, “Graph attention networks,” arXiv preprint arXiv:1710.10903, 2017.
+[10] Y. You, T. Chen, Y. Sui, T. Chen, Z. Wang, and Y. Shen, “Graph contrastive learning with augmentations,” Advances in Neural Information Processing Systems, vol. 33, pp. 5812–5823, 2020.
