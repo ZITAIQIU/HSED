@@ -11,7 +11,7 @@ This repository contains the source code and dataset for the paper "Heterogeneou
 * torchvision=0.2.2
 
 # To run HSED
-* Step 1) select dataset: 'twitter' in 
+* Step 1) set dataset as 'twitter' in ```config.pu```
 * Step 2) run _feature_process.py_ to generate the initial features from the Twitter dataset.
 * Step 3) run _generate_homo_graph.py_ to cover social message to homogeneous information network as input.
 * Step 4) run _HSED.py_
