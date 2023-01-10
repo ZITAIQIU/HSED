@@ -10,23 +10,27 @@ This repository contains the source code and dataset for the paper "Heterogeneou
 * scikit-learn==0.20.3
 * torchvision=0.2.2
 
-# To run HSED
-* Step 1) set dataset as 'twitter' in ```config.pu```
-* Step 2) run _feature_process.py_ to generate the initial features from the Twitter dataset.
-* Step 3) run _generate_homo_graph.py_ to cover social message to homogeneous information network as input.
-* Step 4) run _HSED.py_
-## Options
+# Usage
+## To run HSED
+* Step 1) set model as 'HSED' and dataset as 'twitter' in ```config.py```.
+* Step 2) run ```feature_process.py``` to generate the initial features from the Twitter dataset.
+* Step 3) run ```generate_homo_graph.py``` to cover social message to homogeneous information network as input.
+* Step 4) run ```HSED.py```
+## To run UHSED
+* Step 1) set model as 'UHSED' and dataset select from ['mini-twitter', 'cora', 'citeseer'] in ```config.pu```.
+* Step 2) run ```UHSED.py```
 
 
 
-# Datasets and Usage
-HSED only use Twitter dataset and UHSED use mini-Twitter, Cora and Citeseer datasets.
+
+# Datasets
+HSED only use _Twitter_ dataset and UHSED use _mini-Twitter, Cora and Citeseer datasets_.
 
 To run this code on different detasets please change the valu of 'dataset' in ```config.py```.
 
 ## Twitter dataset
 The Twitter dataset [1] contains 68.841 manually labeled tweets related to 503 event classes. To reduce data processing time, already processed data can be found on [Google Drive](https://drive.google.com/drive/folders/1mb8IT7uTW-gCnK5EFE67iFk7RtZTz3rB?usp=sharing)
-### Format
+### Twitter data Format
 ```
 'event_id': manually labeled event class
 'tweet_id': tweet id
@@ -42,7 +46,7 @@ The Twitter dataset [1] contains 68.841 manually labeled tweets related to 503 e
 'filtered_words': a list, lower-cased words of the tweet (punctuations, stop words, hashtags, and user mentions are filtered out)
 'sampled_words': a list, sampled words of the tweet (only words that are not in the dictionary are kept to reduce the total number of unique words and maintain a sparse message graph)
 ```
-### Usage
+### Twitter dataset Usage
 ```Python
 import pandas as pd
 import numpy as np
