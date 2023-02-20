@@ -1,5 +1,5 @@
 # HSED
-This repository contains the source code and dataset for the paper "Heterogeneous Social Event Detection via Hyperbolic Graph Representations". This article is under review, please feel free to contact me if you need code.
+This repository contains the source code and dataset for the paper "Heterogeneous Social Event Detection via Hyperbolic Graph Representations". This article is under review, only part of the code is put up, if you need all the code, please feel free to contact me.
 # Requirements
 * Python==3.7
 * torch>=1.4.0
