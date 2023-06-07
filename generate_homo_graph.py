@@ -358,11 +358,12 @@ df = pd.DataFrame(data=df_np, columns=["event_id", "tweet_id", "text", "user_id"
                                        "words", "filtered_words", "sampled_words"])
 print("Data converted to dataframe.")
 
-# build graph
+# build graph, Generate additional requirements input
 G = construct_graph_from_df(df)
 print('Heterogeneous message network generated.')
 graph_mins, graph_message = to_dgl_graph(G, save_path)
 print('Heterogeneous -> homogeneous finish.')
 print("Time sepnt on heterogeneous -> homogeneous graph conversions: ", graph_mins)
+
 
 
