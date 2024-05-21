@@ -72,6 +72,18 @@ In our paper the baselines we used including:
 * DGI [9]. Source: https://github.com/PetarV-/DGI.
 * GraphCL [10]. Source: https://github.com/Shen-Lab/GraphCL.
 
+# Citation
+If you find this repository helpful, please consider citing the following paper.
+```
+@article{qiu2024heterogeneous,
+  title={Heterogeneous Social Event Detection via Hyperbolic Graph Representations},
+  author={Qiu, Zitai and Wu, Jia and Yang, Jian and Su, Xing and Aggarwal, Charu C},
+  journal={IEEE Transactions on Big Data},
+  year={2024},
+  publisher={IEEE}
+}
+```
+
 # Reference
 [1] A. J. McMinn, Y. Moshfeghi, and J. M. Jose, “Building a large-scale corpus for evaluating event detection on twitter,” in Proceedings of the 22nd ACM international conference on Information & Knowledge Management, 2013, pp. 409–418.
 
