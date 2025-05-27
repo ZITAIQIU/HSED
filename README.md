@@ -29,7 +29,7 @@ HSED only use Twitter dataset [1] and UHSED use mini-Twitter, Cora [2] and Cites
 To run this code on different detasets please change the valu of 'dataset' in ```config.py```.
 
 ## Twitter dataset
-The Twitter dataset contains 68.841 manually labeled tweets related to 503 event classes. To save time, processed data can be found on [Google Drive](https://drive.google.com/drive/folders/1M4h3Uh9XRWCCc3OwNvNYs6sISHCHsI7e?usp=sharing).
+
 ### Twitter data Format
 ```
 'event_id': manually labeled event class
